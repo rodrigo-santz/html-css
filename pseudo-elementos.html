@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pseudo-elementos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      /*                                                                       
+        SELETORES PERSONALIZADOS               
+
+        #   = id
+        .   = class
+        :   = pseudo-class
+        ::  = pseudo-element
+        >   = clildren (elemento filho)
+
+        A propriedade CSS 'aspect-ratio' permite que você defina a proporção desejada de largura e altura de um elemento. Isso significa que, mesmo que o container pai ou o tamanho da viewport sejam alterados, o navegador ajustará as dimensões do elemento para manter a proporção
+       */
+
+       a::after {
+          content: '[ Link]'; text-decoration: none; font-weight: normal; color: crimson;
+       }
+    </style>
+    <body>
+      
+        <h1>Pseudo-elementos</h1>
+        <h2>Personalizando Links</h2>
+          <ul>
+            <li><a href="https://github.com/Rodrigo-Santz">Repositório GitHub</a></li>
+            <li><a href="https://www.youtube.com/@Satntzz">Canal do Youtube</a></li>
+            <li><a href="https://www.instagram.com/rd_lemos/">Instagram</a></li>
+          </ul>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
